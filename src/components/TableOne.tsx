@@ -45,7 +45,7 @@ const TableOne = () => {
             <div className="flex-shrink-0">
               <img src={BrandOne} alt="Brand" />
             </div>
-            <p className="hidden text-black dark:text-white sm:block">Google</p>
+            <p className="hidden text-black dark:text-white sm:block">گوگل</p>
           </div>
 
           <div className="flex items-center justify-center p-2.5 xl:p-5">
@@ -71,7 +71,7 @@ const TableOne = () => {
               <img src={BrandTwo} alt="Brand" />
             </div>
             <p className="hidden text-black dark:text-white sm:block">
-              Twitter
+            توییتر
             </p>
           </div>
 
@@ -97,7 +97,7 @@ const TableOne = () => {
             <div className="flex-shrink-0">
               <img src={BrandThree} alt="Brand" />
             </div>
-            <p className="hidden text-black dark:text-white sm:block">Github</p>
+            <p className="hidden text-black dark:text-white sm:block">گیت هاب</p>
           </div>
 
           <div className="flex items-center justify-center p-2.5 xl:p-5">
@@ -122,7 +122,7 @@ const TableOne = () => {
             <div className="flex-shrink-0">
               <img src={BrandFour} alt="Brand" />
             </div>
-            <p className="hidden text-black dark:text-white sm:block">Vimeo</p>
+            <p className="hidden text-black dark:text-white sm:block">ویمیو</p>
           </div>
 
           <div className="flex items-center justify-center p-2.5 xl:p-5">
@@ -148,7 +148,7 @@ const TableOne = () => {
               <img src={BrandFive} alt="Brand" />
             </div>
             <p className="hidden text-black dark:text-white sm:block">
-              Facebook
+            فیس بوک
             </p>
           </div>
 
