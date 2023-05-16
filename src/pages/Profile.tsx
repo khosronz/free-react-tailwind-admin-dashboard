@@ -6,7 +6,7 @@ import DefaultLayout from '../layout/DefaultLayout';
 const Profile = () => {
   return (
     <DefaultLayout>
-      <Breadcrumb pageName="Profile" />
+      <Breadcrumb pageName="پروفایل" />
 
       <div className="overflow-hidden rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
         <div className="relative z-20 h-35 md:h-65">
@@ -44,7 +44,7 @@ const Profile = () => {
                   />
                 </svg>
               </span>
-              <span>Edit</span>
+              <span>ویرایش</span>
             </label>
           </div>
         </div>
@@ -90,44 +90,43 @@ const Profile = () => {
             <h3 className="mb-1.5 text-2xl font-semibold text-black dark:text-white">
               Danish Heilium
             </h3>
-            <p className="font-medium">Ui/Ux Designer</p>
+            <p className="font-medium">طراح UI/UX</p>
             <div className="mx-auto mt-4.5 mb-5.5 grid max-w-94 grid-cols-3 rounded-md border border-stroke py-2.5 shadow-1 dark:border-strokedark dark:bg-[#37404F]">
               <div className="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-strokedark xsm:flex-row">
                 <span className="font-semibold text-black dark:text-white">
                   259
                 </span>
-                <span className="text-sm">Posts</span>
+                <span className="text-sm">نوشته ها</span>
               </div>
               <div className="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-strokedark xsm:flex-row">
                 <span className="font-semibold text-black dark:text-white">
                   129K
                 </span>
-                <span className="text-sm">Followers</span>
+                <span className="text-sm">دنبال کنندگان</span>
               </div>
               <div className="flex flex-col items-center justify-center gap-1 px-4 xsm:flex-row">
                 <span className="font-semibold text-black dark:text-white">
                   2K
                 </span>
-                <span className="text-sm">Following</span>
+                <span className="text-sm">دنبال شوندگان</span>
               </div>
             </div>
 
             <div className="mx-auto max-w-180">
               <h4 className="font-semibold text-black dark:text-white">
-                About Me
+                درباره من
               </h4>
               <p className="mt-4.5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque posuere fermentum urna, eu condimentum mauris
-                tempus ut. Donec fermentum blandit aliquet. Etiam dictum dapibus
-                ultricies. Sed vel aliquet libero. Nunc a augue fermentum,
-                pharetra ligula sed, aliquam lacus.
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+               و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+               و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+               درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری.
               </p>
             </div>
 
             <div className="mt-6.5">
               <h4 className="mb-3.5 font-medium text-black dark:text-white">
-                Follow me on
+              من را دنبال کنید
               </h4>
               <div className="flex items-center justify-center gap-3.5">
                 <a

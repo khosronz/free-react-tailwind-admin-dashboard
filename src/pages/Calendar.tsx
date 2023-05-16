@@ -4,7 +4,7 @@ import DefaultLayout from '../layout/DefaultLayout';
 const Calendar = () => {
   return (
     <DefaultLayout>
-      <Breadcrumb pageName="Calendar" />
+      <Breadcrumb pageName="تقویم" />
 
       {/* <!-- ====== Calendar Section Start ====== --> */}
       <div className="w-full max-w-full rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">

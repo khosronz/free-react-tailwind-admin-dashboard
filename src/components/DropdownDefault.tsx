@@ -85,7 +85,7 @@ const DropdownDefault = () => {
               </clipPath>
             </defs>
           </svg>
-          Edit
+          ویرایش
         </button>
         <button className="flex w-full items-center gap-2 rounded-sm py-1.5 px-4 text-left text-sm hover:bg-gray dark:hover:bg-meta-4">
           <svg

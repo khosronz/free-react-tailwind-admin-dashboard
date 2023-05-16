@@ -31,7 +31,7 @@ function App() {
   }, []);
 
   return loading ? (
-    <p className=" text-center text-danger">Failed to lead app</p>
+    <p className=" text-center text-danger">موفق به بارگذاری برنامه نشد.</p>
   ) : (
     <>
       <Routes>

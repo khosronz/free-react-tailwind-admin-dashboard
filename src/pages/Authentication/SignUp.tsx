@@ -7,7 +7,7 @@ import DefaultLayout from '../../layout/DefaultLayout';
 const SignUp = () => {
   return (
     <DefaultLayout>
-      <Breadcrumb pageName="Sign Up" />
+      <Breadcrumb pageName="ثبت نام" />
 
       <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
         <div className="flex flex-wrap items-center">

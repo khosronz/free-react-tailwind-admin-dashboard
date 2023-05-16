@@ -13,7 +13,7 @@ import DefaultLayout from '../../layout/DefaultLayout';
 const FormElements = () => {
   return (
     <DefaultLayout>
-      <Breadcrumb pageName="FormElements" />
+      <Breadcrumb pageName="عناصر فرم" />
 
       <div className="grid grid-cols-1 gap-9 sm:grid-cols-2">
         <div className="flex flex-col gap-9">

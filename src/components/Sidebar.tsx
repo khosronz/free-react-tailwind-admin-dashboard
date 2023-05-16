@@ -98,7 +98,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
           {/* <!-- Menu Group --> */}
           <div>
             <h3 className="mb-4 ml-4 text-sm font-semibold text-bodydark2">
-              MENU
+              منو
             </h3>
 
             <ul className="mb-6 flex flex-col gap-1.5">
@@ -150,9 +150,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                             fill=""
                           />
                         </svg>
-                        Dashboard
+                        میزکار
                         <svg
-                          className={`absolute right-4 top-1/2 -translate-y-1/2 fill-current ${
+                          className={`absolute left-4 top-1/2 -translate-y-1/2 fill-current ${
                             open && 'rotate-180'
                           }`}
                           width="20"
@@ -184,7 +184,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                                 (isActive && '!text-white')
                               }
                             >
-                              eCommerce
+                              تجارت الکترونیک
                             </NavLink>
                           </li>
                         </ul>
@@ -218,7 +218,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                       fill=""
                     />
                   </svg>
-                  Calendar
+                  تقویم
                 </NavLink>
               </li>
               {/* <!-- Menu Item Calendar --> */}
@@ -248,7 +248,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                       fill=""
                     />
                   </svg>
-                  Profile
+                  پروفایل
                 </NavLink>
               </li>
               {/* <!-- Menu Item Profile --> */}
@@ -305,9 +305,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                             fill="white"
                           />
                         </svg>
-                        Forms
+                        فرمها
                         <svg
-                          className={`absolute right-4 top-1/2 -translate-y-1/2 fill-current ${
+                          className={`absolute left-4 top-1/2 -translate-y-1/2 fill-current ${
                             open && 'rotate-180'
                           }`}
                           width="20"
@@ -339,7 +339,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                                 (isActive && '!text-white')
                               }
                             >
-                              Form Elements
+                              عناصر فرم
                             </NavLink>
                           </li>
                           <li>
@@ -350,7 +350,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                                 (isActive && '!text-white')
                               }
                             >
-                              Form Layout
+                              طرح بندی فرم
                             </NavLink>
                           </li>
                         </ul>
@@ -395,7 +395,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                       </clipPath>
                     </defs>
                   </svg>
-                  Tables
+                  جداول
                 </NavLink>
               </li>
               {/* <!-- Menu Item Tables --> */}
@@ -438,7 +438,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                       </clipPath>
                     </defs>
                   </svg>
-                  Settings
+                  تنظیمات
                 </NavLink>
               </li>
               {/* <!-- Menu Item Settings --> */}
@@ -448,7 +448,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
           {/* <!-- Others Group --> */}
           <div>
             <h3 className="mb-4 ml-4 text-sm font-semibold text-bodydark2">
-              OTHERS
+            دیگران
             </h3>
 
             <ul className="mb-6 flex flex-col gap-1.5">
@@ -489,7 +489,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                       </clipPath>
                     </defs>
                   </svg>
-                  Chart
+                  نمودار
                 </NavLink>
               </li>
               {/* <!-- Menu Item Chart --> */}
@@ -547,9 +547,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                             </clipPath>
                           </defs>
                         </svg>
-                        UI Elements
+                        عناصر رابط کاربری
                         <svg
-                          className={`absolute right-4 top-1/2 -translate-y-1/2 fill-current ${
+                          className={`absolute left-4 top-1/2 -translate-y-1/2 fill-current ${
                             open && 'rotate-180'
                           }`}
                           width="20"
@@ -581,7 +581,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                                 (isActive && '!text-white')
                               }
                             >
-                              Alerts
+                              هشدارها
                             </NavLink>
                           </li>
                           <li>
@@ -592,7 +592,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                                 (isActive && '!text-white')
                               }
                             >
-                              Buttons
+                              دکمه ها
                             </NavLink>
                           </li>
                         </ul>
@@ -655,9 +655,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                             </clipPath>
                           </defs>
                         </svg>
-                        Authentication
+                        احراز هویت
                         <svg
-                          className={`absolute right-4 top-1/2 -translate-y-1/2 fill-current ${
+                          className={`absolute left-4 top-1/2 -translate-y-1/2 fill-current ${
                             open && 'rotate-180'
                           }`}
                           width="20"
@@ -689,7 +689,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                                 (isActive && '!text-white')
                               }
                             >
-                              Sign In
+                              ورود
                             </NavLink>
                           </li>
                           <li>
@@ -700,7 +700,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                                 (isActive && '!text-white')
                               }
                             >
-                              Sign Up
+                              ثبت نام
                             </NavLink>
                           </li>
                         </ul>
