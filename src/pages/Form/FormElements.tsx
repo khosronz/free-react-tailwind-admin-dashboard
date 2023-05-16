@@ -246,9 +246,9 @@ const FormElements = () => {
                     </svg>
                   </span>
                   <select className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-12 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input">
-                    <option value="">USA</option>
-                    <option value="">UK</option>
-                    <option value="">Canada</option>
+                    <option value="">ایران</option>
+                    <option value="">افغانستان</option>
+                    <option value="">تاجیکستان</option>
                   </select>
                   <span className="absolute top-1/2 right-4 z-10 -translate-y-1/2">
                     <svg
@@ -278,8 +278,8 @@ const FormElements = () => {
                 <div className="relative z-20 w-full rounded border border-stroke p-1.5 pr-8 font-medium outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input">
                   <div className="flex flex-wrap items-center">
                     <span className="m-1.5 flex items-center justify-center rounded border-[.5px] border-stroke bg-gray py-1.5 px-2.5 text-sm font-medium dark:border-strokedark dark:bg-white/30">
-                      Design
-                      <span className="cursor-pointer pl-2 hover:text-danger">
+                      طراحی
+                      <span className="cursor-pointer pr-2 hover:text-danger">
                         <svg
                           width="12"
                           height="12"
@@ -297,8 +297,8 @@ const FormElements = () => {
                       </span>
                     </span>
                     <span className="m-1.5 flex items-center justify-center rounded border-[.5px] border-stroke bg-gray py-1.5 px-2.5 text-sm font-medium dark:border-strokedark dark:bg-white/30">
-                      Development
-                      <span className="cursor-pointer pl-2 hover:text-danger">
+                      توسعه
+                      <span className="cursor-pointer pr-2 hover:text-danger">
                         <svg
                           width="12"
                           height="12"
