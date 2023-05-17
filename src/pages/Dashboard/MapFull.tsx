@@ -4,7 +4,7 @@ import DefaultLayout from '../../layout/DefaultLayout.js';
 const MapFull = () => {
   return (
     <DefaultLayout>
-      <MapTwo />
+        <MapTwo />
     </DefaultLayout>
   );
 };

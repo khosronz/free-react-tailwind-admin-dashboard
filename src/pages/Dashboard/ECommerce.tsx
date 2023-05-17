@@ -7,6 +7,7 @@ import ChartThree from '../../components/ChartThree.tsx';
 import ChartTwo from '../../components/ChartTwo.tsx';
 import ChatCard from '../../components/ChatCard.tsx';
 import MapOne from '../../components/MapOne.tsx';
+import MapTwo from '../../components/MapTwo.tsx';
 import TableOne from '../../components/TableOne.tsx';
 import DefaultLayout from '../../layout/DefaultLayout.tsx';
 
@@ -29,6 +30,7 @@ const ECommerce = () => {
           <TableOne />
         </div>
         <ChatCard />
+        <MapTwo />
       </div>
     </DefaultLayout>
   );
