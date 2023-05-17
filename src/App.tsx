@@ -13,6 +13,7 @@ import Settings from './pages/Settings';
 import Tables from './pages/Tables';
 import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
+import MapFull from './pages/Dashboard/MapFull';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -36,6 +37,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<ECommerce />} />
+        <Route path="/mapfull" element={<MapFull />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/forms/form-elements" element={<FormElements />} />
