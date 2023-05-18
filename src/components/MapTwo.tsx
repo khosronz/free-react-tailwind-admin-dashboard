@@ -8,10 +8,10 @@ import 'leaflet/dist/leaflet.css';
 
 const MapTwo = () => {
   
-  const center = [51.505, -0.09]
+  const center = [29.609923430233724, 52.54340905558905]
   const rectangle = [
-    [51.49, -0.08],
-    [51.5, -0.06],
+    [29.609923430233724, 52.54340905558905],
+    [29.609923430233724, 52.54340905558905],
   ]
 
   return (
@@ -20,7 +20,7 @@ const MapTwo = () => {
       نقشه
       </h4>
       <div id="mapTwo">
-        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true} className="w-full h-full">
+        <MapContainer center={[29.609923430233724, 52.54340905558905]} zoom={15} scrollWheelZoom={true} className="w-full h-full">
           <TileLayer className="w-full h-full"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -48,7 +48,7 @@ const MapTwo = () => {
                       />
                       <LayerGroup>
                         <Circle
-                          center={[51.51, -0.08]}
+                          center={[29.609923430233724, 52.54340905558905]}
                           pathOptions={{ color: 'green', fillColor: 'green' }}
                           radius={100}
                         />
