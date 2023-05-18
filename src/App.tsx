@@ -15,6 +15,7 @@ import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
 import MapFull from './pages/Dashboard/MapFull';
 import FormElementsTwo from './pages/Form/FormElementsTwo';
+import Icons from './pages/UiElements/Icons';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -44,6 +45,7 @@ function App() {
         <Route path="/forms/form-elements" element={<FormElements />} />
         <Route path="/forms/form-layout" element={<FormLayout />} />
         <Route path="/forms/form-elements-two" element={<FormElementsTwo />} />
+        <Route path="/icons" element={<Icons />} />
         <Route path="/tables" element={<Tables />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/chart" element={<Chart />} />
