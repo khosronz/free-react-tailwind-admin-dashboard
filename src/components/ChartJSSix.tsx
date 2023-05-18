@@ -1,40 +1,38 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
-  BarElement,
+  PointElement,
+  LineElement,
   Title,
   Tooltip,
+  Filler,
   Legend,
 } from 'chart.js';
-import { Bar } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import faker from 'faker';
-
 
 ChartJS.register(
   CategoryScale,
   LinearScale,
-  BarElement,
+  PointElement,
+  LineElement,
   Title,
   Tooltip,
+  Filler,
   Legend
 );
 
 export const options = {
+  responsive: true,
   plugins: {
+    legend: {
+      position: 'top' as const,
+    },
     title: {
       display: true,
-      text: 'Chart.js Bar Chart - Stacked',
-    },
-  },
-  responsive: true,
-  scales: {
-    x: {
-      stacked: true,
-    },
-    y: {
-      stacked: true,
+      text: 'Chart.js Line Chart',
     },
   },
 };
@@ -45,24 +43,16 @@ export const data = {
   labels,
   datasets: [
     {
-      label: 'مجموعه داده 1',
-      data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      backgroundColor: 'rgb(255, 99, 132)',
-    },
-    {
+      fill: true,
       label: 'مجموعه داده ۲',
-      data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      backgroundColor: 'rgb(75, 192, 192)',
-    },
-    {
-      label: 'مجموعه داده ۳',
-      data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      backgroundColor: 'rgb(53, 162, 235)',
+      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+      borderColor: 'rgb(53, 162, 235)',
+      backgroundColor: 'rgba(53, 162, 235, 0.5)',
     },
   ],
 };
 
-const ChartJSFour: React.FC = () => {
+const ChartJSSix: React.FC = () => {
 
 
   return (
@@ -70,15 +60,15 @@ const ChartJSFour: React.FC = () => {
       <div className="flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
         <div className="flex w-full flex-wrap gap-3 sm:gap-5">
           <div className="flex min-w-47.5">
-            <h4>نمودار میله ای انباشته</h4>
+            <h4>نمودار مساحتی</h4>
           </div>
 
         </div>
       </div>
 
       <div>
-        <div id="ChartJSFour" className="-ml-5">
-          <Bar options={options} data={data} />
+        <div id="ChartJSSix" className="-ml-5">
+        <Line options={options} data={data} />  
 
         </div>
       </div>
@@ -86,4 +76,4 @@ const ChartJSFour: React.FC = () => {
   );
 };
 
-export default ChartJSFour;
+export default ChartJSSix;

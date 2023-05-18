@@ -1,40 +1,53 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
-  BarElement,
+  PointElement,
+  LineElement,
   Title,
   Tooltip,
   Legend,
 } from 'chart.js';
-import { Bar } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import faker from 'faker';
-
 
 ChartJS.register(
   CategoryScale,
   LinearScale,
-  BarElement,
+  PointElement,
+  LineElement,
   Title,
   Tooltip,
   Legend
 );
 
 export const options = {
+  responsive: true,
+  interaction: {
+    mode: 'index' as const,
+    intersect: false,
+  },
+  stacked: false,
   plugins: {
     title: {
       display: true,
-      text: 'Chart.js Bar Chart - Stacked',
+      text: 'Chart.js Line Chart - Multi Axis',
     },
   },
-  responsive: true,
   scales: {
-    x: {
-      stacked: true,
-    },
     y: {
-      stacked: true,
+      type: 'linear' as const,
+      display: true,
+      position: 'left' as const,
+    },
+    y1: {
+      type: 'linear' as const,
+      display: true,
+      position: 'right' as const,
+      grid: {
+        drawOnChartArea: false,
+      },
     },
   },
 };
@@ -47,22 +60,21 @@ export const data = {
     {
       label: 'مجموعه داده 1',
       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      backgroundColor: 'rgba(255, 99, 132, 0.5)',
+      yAxisID: 'y',
     },
     {
       label: 'مجموعه داده ۲',
       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      backgroundColor: 'rgb(75, 192, 192)',
-    },
-    {
-      label: 'مجموعه داده ۳',
-      data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      backgroundColor: 'rgb(53, 162, 235)',
+      borderColor: 'rgb(53, 162, 235)',
+      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      yAxisID: 'y1',
     },
   ],
 };
 
-const ChartJSFour: React.FC = () => {
+const ChartJSEight: React.FC = () => {
 
 
   return (
@@ -70,20 +82,19 @@ const ChartJSFour: React.FC = () => {
       <div className="flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
         <div className="flex w-full flex-wrap gap-3 sm:gap-5">
           <div className="flex min-w-47.5">
-            <h4>نمودار میله ای انباشته</h4>
+            <h4>نمودار خطی - چند محوره</h4>
           </div>
 
         </div>
       </div>
 
       <div>
-        <div id="ChartJSFour" className="-ml-5">
-          <Bar options={options} data={data} />
-
+        <div id="ChartJSEight" className="-ml-5">
+          <Line options={options} data={data} />
         </div>
       </div>
     </div>
   );
 };
 
-export default ChartJSFour;
+export default ChartJSEight;

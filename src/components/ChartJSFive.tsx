@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -10,7 +10,6 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import faker from 'faker';
-
 
 ChartJS.register(
   CategoryScale,
@@ -29,6 +28,10 @@ export const options = {
     },
   },
   responsive: true,
+  interaction: {
+    mode: 'index' as const,
+    intersect: false,
+  },
   scales: {
     x: {
       stacked: true,
@@ -48,21 +51,24 @@ export const data = {
       label: 'مجموعه داده 1',
       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
       backgroundColor: 'rgb(255, 99, 132)',
+      stack: 'Stack 0',
     },
     {
       label: 'مجموعه داده ۲',
       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
       backgroundColor: 'rgb(75, 192, 192)',
+      stack: 'Stack 0',
     },
     {
       label: 'مجموعه داده ۳',
       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
       backgroundColor: 'rgb(53, 162, 235)',
+      stack: 'Stack 1',
     },
   ],
 };
 
-const ChartJSFour: React.FC = () => {
+const ChartJSFive: React.FC = () => {
 
 
   return (
@@ -70,14 +76,14 @@ const ChartJSFour: React.FC = () => {
       <div className="flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
         <div className="flex w-full flex-wrap gap-3 sm:gap-5">
           <div className="flex min-w-47.5">
-            <h4>نمودار میله ای انباشته</h4>
+            <h4>نمودار میله ای گروه بندی شده</h4>
           </div>
 
         </div>
       </div>
 
       <div>
-        <div id="ChartJSFour" className="-ml-5">
+        <div id="ChartJSFive" className="-ml-5">
           <Bar options={options} data={data} />
 
         </div>
@@ -86,4 +92,4 @@ const ChartJSFour: React.FC = () => {
   );
 };
 
-export default ChartJSFour;
+export default ChartJSFive;

@@ -1,43 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   Chart as ChartJS,
-  CategoryScale,
   LinearScale,
+  CategoryScale,
   BarElement,
-  Title,
-  Tooltip,
+  PointElement,
+  LineElement,
   Legend,
+  Tooltip,
+  LineController,
+  BarController,
 } from 'chart.js';
-import { Bar } from 'react-chartjs-2';
+import { Chart } from 'react-chartjs-2';
 import faker from 'faker';
 
-
 ChartJS.register(
-  CategoryScale,
   LinearScale,
+  CategoryScale,
   BarElement,
-  Title,
+  PointElement,
+  LineElement,
+  Legend,
   Tooltip,
-  Legend
+  LineController,
+  BarController
 );
-
-export const options = {
-  plugins: {
-    title: {
-      display: true,
-      text: 'Chart.js Bar Chart - Stacked',
-    },
-  },
-  responsive: true,
-  scales: {
-    x: {
-      stacked: true,
-    },
-    y: {
-      stacked: true,
-    },
-  },
-};
 
 const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 
@@ -45,24 +32,32 @@ export const data = {
   labels,
   datasets: [
     {
+      type: 'line' as const,
       label: 'مجموعه داده 1',
+      borderColor: 'rgb(255, 99, 132)',
+      borderWidth: 2,
+      fill: false,
       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      backgroundColor: 'rgb(255, 99, 132)',
     },
     {
+      type: 'bar' as const,
       label: 'مجموعه داده ۲',
-      data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
       backgroundColor: 'rgb(75, 192, 192)',
+      data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+      borderColor: 'white',
+      borderWidth: 2,
     },
     {
+      type: 'bar' as const,
       label: 'مجموعه داده ۳',
-      data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
       backgroundColor: 'rgb(53, 162, 235)',
+      data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
     },
   ],
 };
 
-const ChartJSFour: React.FC = () => {
+
+const ChartJSFifteen: React.FC = () => {
 
 
   return (
@@ -70,20 +65,19 @@ const ChartJSFour: React.FC = () => {
       <div className="flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
         <div className="flex w-full flex-wrap gap-3 sm:gap-5">
           <div className="flex min-w-47.5">
-            <h4>نمودار میله ای انباشته</h4>
+            <h4>نمودار چند نوعی</h4>
           </div>
 
         </div>
       </div>
 
       <div>
-        <div id="ChartJSFour" className="-ml-5">
-          <Bar options={options} data={data} />
-
+        <div id="ChartJSFifteen" className="-ml-5">
+        <Chart type='bar' data={data} />
         </div>
       </div>
     </div>
   );
 };
 
-export default ChartJSFour;
+export default ChartJSFifteen;

@@ -40,12 +40,12 @@ const ChartJSTwo: React.FC = () => {
     labels,
     datasets: [
       {
-        label: 'Dataset 1',
+        label: 'مجموعه داده 1',
         data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
       {
-        label: 'Dataset 2',
+        label: 'مجموعه داده ۲',
         data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
         backgroundColor: 'rgba(53, 162, 235, 0.5)',
       },
@@ -57,15 +57,15 @@ const ChartJSTwo: React.FC = () => {
       <div className="flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
         <div className="flex w-full flex-wrap gap-3 sm:gap-5">
           <div className="flex min-w-47.5">
-            <h4>Vertical Bar Chart</h4>
+            <h4>نمودار میله ای عمودی</h4>
           </div>
 
         </div>
       </div>
 
       <div>
-        <div id="chartJJTwo" className="-ml-5">
-            <Bar options={options} data={data} />;
+        <div id="ChartJSTwelve" className="-ml-5">
+            <Bar options={options} data={data} />
 
         </div>
       </div>
