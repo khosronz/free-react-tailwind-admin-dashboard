@@ -16,6 +16,7 @@ import Buttons from './pages/UiElements/Buttons';
 import MapFull from './pages/Dashboard/MapFull';
 import FormElementsTwo from './pages/Form/FormElementsTwo';
 import Icons from './pages/UiElements/Icons';
+import ChartJSs from './pages/ChartJSs';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -49,6 +50,7 @@ function App() {
         <Route path="/tables" element={<Tables />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/chart" element={<Chart />} />
+        <Route path="/chartjs" element={<ChartJSs />} />
         <Route path="/ui/alerts" element={<Alerts />} />
         <Route path="/ui/buttons" element={<Buttons />} />
         <Route path="/auth/signin" element={<SignIn />} />
