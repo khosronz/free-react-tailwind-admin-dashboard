@@ -140,7 +140,7 @@ const FormElements = () => {
             </div>
           </div>
         </div>
-
+        {/* <!-- Rounded Form --> */}
         <div className="flex flex-col gap-9">
           {/* <!-- Textarea Fields --> */}
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
@@ -346,6 +346,49 @@ const FormElements = () => {
               </div>
             </div>
           </div>
+          <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+            <div className="border-b border-stroke py-4 px-6.5 dark:border-strokedark">
+              <h3 className="font-medium text-black dark:text-white">
+                Rounded Select
+              </h3>
+              <div className="flex flex-col gap-5.5 p-6.5">
+                  <select 
+                    className="rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+                    <option value="">Option</option>
+                    <option value="">Option</option>
+                  </select>
+              </div>
+              <div className="flex flex-col gap-5.5 p-6.5">
+                <input type='tel' className="form-input py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='شماره تلفن'/>
+                <input type='text' className="form-input py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='متن'/>
+                <input type='email' className="form-input py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='ایمیل'/>
+                <input type='url' className="form-input py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='آدرس اینترنتی'/>
+                <input type='password' className="form-input py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='رمز عبور'/>
+                <input type='number' className="form-input py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='شماره'/>
+                <input type='date' className="form-input py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='تاریخ'/>
+                <input type='datetime-local' className="form-input py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='تاریخ و زمان'/>
+                <input type='month' className="form-input py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='ماه'/>
+                <input type='search' className="form-input py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='جستجو'/>
+                <input type='time' className="form-input py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='زمان'/>
+                <input type='week' className="form-input py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='هفته'/>
+                <textarea className="form-textarea py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='متن کامل'/>
+                <input type='select' className="form-select py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='انتخاب'/>
+                <input type='select[multiple]' className="form-multiselect py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" placeholder='انتخاب چند تایی'/>
+
+                <label className="inline-flex items-center">
+                  <input type='checkbox' className="form-checkbox py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" name='چک' value='value'/>
+                  <span className="mr-2">اخبار و پیشنهادات ویژه را برای من ایمیل کنید</span>
+                </label>
+                
+                <label className="inline-flex items-center">
+                  <input type='radio' className="form-radio py-3 rounded-full mb-1 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark" name='رادیو' value='value'/>
+                  <span className="mr-2">اخبار و پیشنهادات ویژه را برای من ایمیل کنید</span>
+                </label>
+                
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </DefaultLayout>
