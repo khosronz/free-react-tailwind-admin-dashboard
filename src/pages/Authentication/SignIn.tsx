@@ -18,8 +18,7 @@ const SignIn = () => {
               </Link>
 
               <p className="2xl:px-20">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                suspendisse.
+              امام حسین (ع) : کسانی که رضایت مخلوق را به بهای غضب خالق بخرند، رستگار نخواهند شد.
               </p>
 
               <span className="mt-15 inline-block">
@@ -149,20 +148,20 @@ const SignIn = () => {
 
           <div className="w-full border-stroke dark:border-strokedark xl:w-1/2 xl:border-l-2">
             <div className="w-full p-4 sm:p-12.5 xl:p-17.5">
-              <span className="mb-1.5 block font-medium">Start for free</span>
+              <span className="mb-1.5 block font-medium">رایگان شروع کنید</span>
               <h2 className="mb-9 text-2xl font-bold text-black dark:text-white sm:text-title-xl2">
-                Sign In to TailAdmin
+                وارد شوید
               </h2>
 
               <form>
                 <div className="mb-4">
                   <label className="mb-2.5 block font-medium text-black dark:text-white">
-                    Email
+                    پست الکترونیک
                   </label>
                   <div className="relative">
                     <input
                       type="email"
-                      placeholder="Enter your email"
+                      placeholder="ایمیل خود را وارد نمایید"
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                     />
 
@@ -188,12 +187,12 @@ const SignIn = () => {
 
                 <div className="mb-6">
                   <label className="mb-2.5 block font-medium text-black dark:text-white">
-                    Re-type Password
+                  رمز عبور را مجدد تایپ کنید
                   </label>
                   <div className="relative">
                     <input
                       type="password"
-                      placeholder="6+ Characters, 1 Capital letter"
+                      placeholder=" حداقل ۶ کاراکتر، ۱ حرف بزرگ"
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                     />
 
@@ -224,7 +223,7 @@ const SignIn = () => {
                 <div className="mb-5">
                   <input
                     type="submit"
-                    value="Sign In"
+                    value="ورود"
                     className="w-full cursor-pointer rounded-lg border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90"
                   />
                 </div>
@@ -263,14 +262,14 @@ const SignIn = () => {
                       </defs>
                     </svg>
                   </span>
-                  Sign in with Google
+                  با گوگل وارد شوید
                 </button>
 
                 <div className="mt-6 text-center">
                   <p>
-                    Don’t have any account?{' '}
+                  هیچ حساب کاربری ندارید؟{' '}
                     <Link to="/auth/signup" className="text-primary">
-                      Sign Up
+                    ثبت نام کنید
                     </Link>
                   </p>
                 </div>
