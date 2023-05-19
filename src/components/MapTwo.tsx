@@ -4,8 +4,6 @@ import { TileLayer } from 'react-leaflet/TileLayer'
 import { useMap } from 'react-leaflet/hooks'
 import 'leaflet/dist/leaflet.css';
 
-
-
 const MapTwo = () => {
   
   const center = [29.609923430233724, 52.54340905558905]
