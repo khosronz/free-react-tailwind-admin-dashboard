@@ -1,6 +1,6 @@
 import Breadcrumb from '../components/Breadcrumb';
-import CoverOne from '../images/cover/cover-01.png';
-import userSix from '../images/user/user-06.png';
+import CoverOne from '../images/cover/imam-hosein-green.png';
+import userSix from '../images/user/hemat.png';
 import DefaultLayout from '../layout/DefaultLayout';
 
 const Profile = () => {
@@ -88,9 +88,9 @@ const Profile = () => {
           </div>
           <div className="mt-4">
             <h3 className="mb-1.5 text-2xl font-semibold text-black dark:text-white">
-              Danish Heilium
+              شهید همت
             </h3>
-            <p className="font-medium">طراح UI/UX</p>
+            <p className="font-medium">شهید دفاع مقدس</p>
             <div className="mx-auto mt-4.5 mb-5.5 grid max-w-94 grid-cols-3 rounded-md border border-stroke py-2.5 shadow-1 dark:border-strokedark dark:bg-[#37404F]">
               <div className="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-strokedark xsm:flex-row">
                 <span className="font-semibold text-black dark:text-white">
@@ -117,10 +117,10 @@ const Profile = () => {
                 درباره من
               </h4>
               <p className="mt-4.5">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
-               و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
-               و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
-               درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری.
+              محمد ابراهیم همت در سال ۱۳۳۴ در شهرضا زاده شد. 
+              تحصیلات خود را در همان شهر به پایان رساند و در سال ۱۳۵۲ دیپلم گرفت. در همان سال وارد دانشسرای تربیت
+               معلم اصفهان شد و در سال ۱۳۵۴ مدرک فوق دیپلم خود را اخذ کرد. ۲ سال بعد برای گذراندن خدمت سربازی اقدام کرد.
+               وی پس از سربازی به شهر خود بازگشت و مدتی در مدارس راهنمایی شهرضا و روستاهای اطراف به تدریس تاریخ پرداخت. 
               </p>
             </div>
 

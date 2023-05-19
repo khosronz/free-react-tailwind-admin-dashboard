@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import userSeven from '../images/user/user-07.png';
-import userEight from '../images/user/user-08.png';
-import userNine from '../images/user/user-09.png';
-import userTen from '../images/user/user-10.png';
+import userSeven from '../images/user/motevaselian.jpg';
+import userEight from '../images/user/rajai.jpg';
+import userNine from '../images/user/bakeri.jpg';
+import userTen from '../images/user/sgahid-bagheri.jpg';
 
 const TaskHeader = () => {
   const [popupOpen, setPopupOpen] = useState(false);

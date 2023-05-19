@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import UserOne from '../images/user/user-01.png';
-import UserTwo from '../images/user/user-02.png';
-import UserThree from '../images/user/user-03.png';
-import UserFour from '../images/user/user-04.png';
-import UserFive from '../images/user/user-05.png';
+import UserOne from '../images/user/hemat.png';
+import UserTwo from '../images/user/hemat.png';
+import UserThree from '../images/user/sayad.jpg';
+import UserFour from '../images/user/chamran.jpg';
+import UserFive from '../images/user/satari.jpg';
 
 const ChatCard = () => {
   return (
@@ -25,7 +25,7 @@ const ChatCard = () => {
           <div className="flex flex-1 items-center justify-between">
             <div>
               <h5 className="font-medium text-black dark:text-white">
-                Devid Heilo
+              شهید صیاد
               </h5>
               <p>
                 <span className="text-sm text-black dark:text-white">
@@ -50,7 +50,7 @@ const ChatCard = () => {
 
           <div className="flex flex-1 items-center justify-between">
             <div>
-              <h5 className="font-medium">Henry Fisher</h5>
+              <h5 className="font-medium">شهید چمران</h5>
               <p>
                 <span className="text-sm">I am waiting for you</span>
                 <span className="text-xs"> . 5:54 PM</span>
@@ -69,7 +69,7 @@ const ChatCard = () => {
 
           <div className="flex flex-1 items-center justify-between">
             <div>
-              <h5 className="font-medium">Wilium Smith</h5>
+              <h5 className="font-medium">شهید ستاری</h5>
               <p>
                 <span className="text-sm">Where are you now?</span>
                 <span className="text-xs"> . 10:12 PM</span>
@@ -89,7 +89,7 @@ const ChatCard = () => {
           <div className="flex flex-1 items-center justify-between">
             <div>
               <h5 className="font-medium text-black dark:text-white">
-                Henry Deco
+              شهید همت
               </h5>
               <p>
                 <span className="text-sm text-black dark:text-white">
@@ -114,7 +114,7 @@ const ChatCard = () => {
 
           <div className="flex flex-1 items-center justify-between">
             <div>
-              <h5 className="font-medium">Jubin Jack</h5>
+              <h5 className="font-medium">شهید همت</h5>
               <p>
                 <span className="text-sm">I really love that!</span>
                 <span className="text-xs"> . Oct 23</span>
@@ -133,7 +133,7 @@ const ChatCard = () => {
 
           <div className="flex flex-1 items-center justify-between">
             <div>
-              <h5 className="font-medium">Wilium Smith</h5>
+              <h5 className="font-medium">شهید ستاری  </h5>
               <p>
                 <span className="text-sm">Where are you now?</span>
                 <span className="text-xs"> . Sep 20</span>

@@ -17,6 +17,7 @@
     "akar-icons": "^1.9.28",
     "apexcharts": "^3.37.0",
     "chart.js": "^4.3.0",
+    "country-flags-svg": "^1.1.8",
     "faker": "^5.5.3",
     "jsvectormap": "^1.5.1",
     "leaflet": "^1.9.3",

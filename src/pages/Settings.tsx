@@ -1,5 +1,5 @@
 import Breadcrumb from '../components/Breadcrumb';
-import userThree from '../images/user/user-03.png';
+import userThree from '../images/user/sayad.jpg';
 import DefaultLayout from '../layout/DefaultLayout';
 
 const Settings = () => {
@@ -57,8 +57,8 @@ const Settings = () => {
                           type="text"
                           name="fullName"
                           id="fullName"
-                          placeholder="Devid Jhon"
-                          defaultValue="Devid Jhon"
+                          placeholder="شهید همت"
+                          defaultValue="شهید همت"
                         />
                       </div>
                     </div>
@@ -187,7 +187,7 @@ const Settings = () => {
                         id="bio"
                         rows={6}
                         placeholder="Write your bio here"
-                        defaultValue="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و ."
+                        defaultValue="امام حسین (ع) : کسانی که رضایت مخلوق را به بهای غضب خالق بخرند، رستگار نخواهند شد."
                       ></textarea>
                     </div>
                   </div>
