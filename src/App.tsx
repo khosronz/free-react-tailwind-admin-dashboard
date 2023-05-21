@@ -17,6 +17,7 @@ import MapFull from './pages/Dashboard/MapFull';
 import FormElementsTwo from './pages/Form/FormElementsTwo';
 import Icons from './pages/UiElements/Icons';
 import ChartJSs from './pages/ChartJSs';
+import Security from './pages/Dashboard/Security';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -41,6 +42,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ECommerce />} />
         <Route path="/mapfull" element={<MapFull />} />
+        <Route path="/security" element={<Security />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/forms/form-elements" element={<FormElements />} />
