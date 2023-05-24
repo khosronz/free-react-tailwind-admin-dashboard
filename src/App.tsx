@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import SignIn from './pages/Authentication/SignIn';
 import SignUp from './pages/Authentication/SignUp';
 import Calendar from './pages/Calendar';
-import Chart from './pages/Chart';
+import Chart from './pages/charts/Chart';
 import ECommerce from './pages/Dashboard/ECommerce';
 import FormElements from './pages/Form/FormElements';
 import FormLayout from './pages/Form/FormLayout';
@@ -16,8 +16,9 @@ import Buttons from './pages/UiElements/Buttons';
 import MapFull from './pages/Dashboard/MapFull';
 import FormElementsTwo from './pages/Form/FormElementsTwo';
 import Icons from './pages/UiElements/Icons';
-import ChartJSs from './pages/ChartJSs';
+import ChartJSs from './pages/charts/ChartJSs';
 import Security from './pages/Dashboard/Security';
+import AMChart from './pages/charts/AMChart';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -51,8 +52,9 @@ function App() {
         <Route path="/icons" element={<Icons />} />
         <Route path="/tables" element={<Tables />} />
         <Route path="/settings" element={<Settings />} />
-        <Route path="/chart" element={<Chart />} />
-        <Route path="/chartjs" element={<ChartJSs />} />
+        <Route path="/charts/chart" element={<Chart />} />
+        <Route path="/charts/chartjs" element={<ChartJSs />} />
+        <Route path="/charts/amchart" element={<AMChart />} />
         <Route path="/ui/alerts" element={<Alerts />} />
         <Route path="/ui/buttons" element={<Buttons />} />
         <Route path="/auth/signin" element={<SignIn />} />
