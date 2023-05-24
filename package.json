@@ -15,6 +15,8 @@
   },
   "dependencies": {
     "@amcharts/amcharts5": "^5.3.12",
+    "@amcharts/amcharts5-fonts": "^5.0.1",
+    "@amcharts/amcharts5-geodata": "^5.1.0",
     "akar-icons": "^1.9.28",
     "apexcharts": "^3.37.0",
     "chart.js": "^4.3.0",

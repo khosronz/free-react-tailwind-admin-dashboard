@@ -19,6 +19,7 @@ import Icons from './pages/UiElements/Icons';
 import ChartJSs from './pages/charts/ChartJSs';
 import Security from './pages/Dashboard/Security';
 import AMChart from './pages/charts/AMChart';
+import AMChartMapFull from './pages/charts/AMChartMapFull';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -55,6 +56,7 @@ function App() {
         <Route path="/charts/chart" element={<Chart />} />
         <Route path="/charts/chartjs" element={<ChartJSs />} />
         <Route path="/charts/amchart" element={<AMChart />} />
+        <Route path="/charts/amchart/map" element={<AMChartMapFull />} />
         <Route path="/ui/alerts" element={<Alerts />} />
         <Route path="/ui/buttons" element={<Buttons />} />
         <Route path="/auth/signin" element={<SignIn />} />
