@@ -56,7 +56,7 @@ function App() {
         <Route path="/charts/chart" element={<Chart />} />
         <Route path="/charts/chartjs" element={<ChartJSs />} />
         <Route path="/charts/amchart" element={<AMChart />} />
-        <Route path="/charts/amchart/map" element={<AMChartMapFull />} />
+        <Route path="/charts/amchartmap" element={<AMChartMapFull />} />
         <Route path="/ui/alerts" element={<Alerts />} />
         <Route path="/ui/buttons" element={<Buttons />} />
         <Route path="/auth/signin" element={<SignIn />} />
