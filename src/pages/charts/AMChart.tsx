@@ -6,6 +6,7 @@ import AMChartPy from '../../components/AMChartPy';
 import AMChartPyComplexOne from '../../components/AMChartPyComplex';
 import AMChartPyComplexTwo from '../../components/AMChartPyComplexTwo';
 import AMChartMapOne from '../../components/AMChartMapOne';
+import AMChartMapTwo from '../../components/AMChartMapTwo';
 
 
 
@@ -31,6 +32,9 @@ const AMChart = () => {
         </div>
         <div className="col-span-6">
           <AMChartMapOne />
+        </div>
+        <div className="col-span-6">
+          <AMChartMapTwo />
         </div>
 
       </div>
