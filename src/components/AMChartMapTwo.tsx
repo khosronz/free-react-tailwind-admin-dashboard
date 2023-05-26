@@ -26,9 +26,9 @@ const AMChartMapTwo = () => {
       am5map.MapChart.new(root, {
         panX: "rotateX",
         // projection: am5map.geoAlbersUsa()
-        projection: am5map.geoEqualEarth()
+        // projection: am5map.geoEqualEarth()
         // projection: am5map.geoEquirectangular()
-        // projection: am5map.geoMercator()
+        projection: am5map.geoMercator()
         // projection: am5map.geoNaturalEarth1()
         // projection: am5map.geoOrthographic()
       })
@@ -45,11 +45,11 @@ const AMChartMapTwo = () => {
       exclude: ["AQ"],
       visible: false
     }));
-    continentSeries.mapPolygons.template.events.on("click", function (ev) {
+    // continentSeries.mapPolygons.template.events.on("click", function (ev) {
 
-      // Clicked on a continent
-      // ev.dataItem will container clicked polygon's data item
-    });
+    //   // Clicked on a continent
+    //   // ev.dataItem will container clicked polygon's data item
+    // });
 
     continentSeries.mapPolygons.template.events.on("click", function (ev) {
       continentSeries.zoomToDataItem(ev.target.dataItem);
